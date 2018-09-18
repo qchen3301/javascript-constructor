@@ -14,7 +14,15 @@ class Tamagotchi {
         this.foodInTummy--
         console.log("The Tamagotchi is crying!!! WAAAH!!!!!")
         console.log('My Tamagotchi\'s name is ' + this.name)
-        console.log(`current food in tummy: ${this.foodInTummy}`)
+        console.log(`${this.name}'s current food in tummy: ${this.foodInTummy}`)
+    }
+    puke(){
+        this.foodInTummy--
+        console.log(`${this.name}'s current food in tummy: ${this.foodInTummy} WAHHHH!!!!`)
+    }
+    yawn(){
+        this.restedness--
+        console.log(`${this.name}'s has a current restedness of: ${this.restedness}`)
     }
 }
 
@@ -25,6 +33,9 @@ let Kughipatchi = new Tamagotchi('Chuuha', 'Kughipatchi')
 let Agghi2 = new Tamagotchi('Gaki', 'Agghiitchi')
 let Kughi2 = new Tamagotchi('Kugi', 'Kughipatchi')
 
+let Agghi3 = new Tamagotchi('Nanba', 'Agghiitchi')
+let Kughi3 = new Tamagotchi('Muuta', 'Kughipatchi')
+
 //test out your Tamagotchies below via console.logs
 console.log(Agghiitchi)
 console.log(Kughipatchi)
@@ -33,3 +44,5 @@ console.log(Agghiitchi.cry())
 console.log(Kughipatchi.cry())
 console.log(Agghi2.cry())
 console.log(Kughi2.cry())
+console.log(Agghi3.puke())
+console.log(Kughi3.yawn())
